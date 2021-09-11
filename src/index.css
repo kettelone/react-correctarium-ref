@@ -1,0 +1,131 @@
+
+h1{
+  padding-bottom: 3rem;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper{
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin: auto;
+}
+
+.sameLine1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sameLine{
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.customSelect{
+  width: 400px;
+  border:1px solid #ced4da;
+  padding: 19px 20px;
+  border-radius: 0.25rem;
+}
+
+.customSelect:focus {
+  outline: none;
+  border: 1.5px  solid lightskyblue;
+  box-shadow: 0 0 3px #719ECE;
+}
+
+
+.input{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-control{
+  padding: 19px 20px;
+}
+
+.textInput{
+  padding-top: 2rem;
+  width: 600px;
+  height: 200px;
+  border-radius: 0.75rem;
+  border:1px solid #ced4da;
+  margin-right: auto;
+}
+
+.textInput:focus {
+  outline: none;
+  border: 1.5px  solid lightskyblue;
+  box-shadow: 0 0 3px #719ECE;
+}
+
+.upload{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.inputInfo{
+  width: 400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#content_price{
+  text-align: center;
+}
+
+#number{
+  font-size: 50px;
+  color: blue;
+}
+
+.currency{
+  font-size:20px;
+}
+
+/* CSS */
+.customButton{
+  min-width: 100px;
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 100px ;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.customButton1:hover,
+.customButton:focus {
+  opacity: .75;
+}
