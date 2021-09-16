@@ -20,25 +20,21 @@ const fileExtensions  = ["doc", "docx", "rtf"];
 function getPrice(textLength, ln){
     const pricePerSymbol = pricePerSymbolList[ln]
     const price = Math.max(1000, textLength)*pricePerSymbol
-    console.log(price.toFixed(2))
     return price.toFixed(2)
 }
 
 function getTime(textLength, ln){
     const symbolsPerHourCount = symbolsPerHour[ln]
     const time = Math.max(hour, halfHour + ((textLength/symbolsPerHourCount)*hour))
-    console.log(time)
     return time
 }
 
 function priceAndTimeMultiplier(fileExtension) {
-    console.log(fileExtensions.includes(fileExtension) ? 1 : 1.2)
     return fileExtensions.includes(fileExtension) ? 1 : 1.2
 }
 
-function calculateResultDate(duration, timeReceived){
-    const resultDate = timeReceived ? timeReceived
-                                    : moment();
+function calculateResultDate(duration, timeReceived = moment()){
+    const resultDate = timeReceived
     while(true){
         const dayStart = moment(resultDate)
             .startOf("day")
@@ -84,7 +80,6 @@ function finalResult(textLength, ln, format, timeReceived){
     const price = getPrice(textLength, ln)*formatMultiplier
     const duration = getTime(textLength, ln)*formatMultiplier
     const date = calculateResultDate(duration, timeReceived)
-    console.log([price, date])
     return [price, date]
 }
 

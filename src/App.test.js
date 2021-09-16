@@ -56,7 +56,7 @@ describe('calculateResultDate should return correct deadline', ()=>{
     test('should return correct deadline', ()=>{
     expect(calculateResultDate(1*3600000, moment('Friday, September 10, 2021 9:00 AM'))).toBe(moment('Friday, September 10, 2021 11:00 AM').valueOf())
     expect(calculateResultDate(1*3600000, moment('Friday, September 10, 2021 5:40 PM'))).toBe(moment('Friday, September 10, 2021 6:40 PM').valueOf())
-    expect(calculateResultDate(2*3600000, moment('Friday, September 10, 2021 6:59 PM'))).toBe(moment('Monday, September 13, 2021 11:59 AM').valueOf())
+    expect(calculateResultDate(1*3600000, moment('Saturday, September 11, 2021 6:50 PM'))).toBe(moment('Monday, September 13, 2021 11:00 AM').valueOf())
     expect(calculateResultDate(12*3600000, moment('Friday, September 10, 2021 8:00 PM'))).toBe(moment('Tuesday, September 14, 2021 1:00 PM').valueOf())
     expect(calculateResultDate(7*9*3600000, moment('Friday, September 10, 2021 2:00 PM'))).toBe(moment('Tuesday, September 21, 2021 2:00 PM').valueOf())
 
